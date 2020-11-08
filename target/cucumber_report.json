@@ -1,0 +1,146 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-08T18:18:02.248Z",
+        "line": 4,
+        "name": "The user should be able to login",
+        "description": "",
+        "id": "test-login-functionality;the-user-should-be-able-to-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15227000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the sauceDemo LoginPage",
+            "match": {
+              "location": "steps_def.LoginSteps.user_is_on_the_sauce_demo_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8671000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in with \"standard_user\",\"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 34
+                }
+              ],
+              "location": "steps_def.LoginSteps.user_logs_in_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 649000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should land on the Inventory page",
+            "match": {
+              "location": "steps_def.InventorySteps.userShouldLandOnThePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-08T18:18:27.295Z",
+        "line": 12,
+        "name": "The user should not be able to login with invalid data",
+        "description": "",
+        "id": "test-login-functionality;the-user-should-not-be-able-to-login-with-invalid-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15361000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on the sauceDemo LoginPage",
+            "match": {
+              "location": "steps_def.LoginSteps.user_is_on_the_sauce_demo_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2551000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user logs in with \"locked_out_user\",\"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"locked_out_user\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps_def.LoginSteps.user_logs_in_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 968000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should see the error button",
+            "match": {
+              "location": "steps_def.LoginSteps.userShouldSeeTheErrorButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Test Login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/ressources/features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
